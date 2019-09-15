@@ -1,0 +1,11 @@
+{
+    "python.pythonPath": "/home/markonick/.local/share/virtualenvs/todo-m45fhcTm/bin/python",
+  
+        "python.formatting.blackArgs": [
+            "--line-length",
+            "120"
+        ],
+        "editor.formatOnSave": true,
+    "python.formatting.provider": "black",
+
+}
