@@ -12,6 +12,21 @@ iii) pipenv
 
 This solution can run in pipenv mode without celery/redis.
 
+
+ENVIRONMENT
+-----------
+
+Create a .env file in the root directory and add the following:
+
+    FLASK_APP=run.py
+    CONTACTS_ENDPOINT=http://backend:5000/api/v1/contacts
+    SQLALCHEMY_TRACK_MODIFICATIONS=False
+    CELERY_BROKER_URL=redis://redis:6379/0
+    CELERY_RESULT_BACKEND=redis://redis:6379/0
+
+PIP
+---
+
 All you need to do is a
 
     pipenv shell
